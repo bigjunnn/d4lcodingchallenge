@@ -4,7 +4,7 @@ A simple database for hospital management. This project is done based on python 
 
 ### Installing
 
-- Run pip install to install missing dependencies
+- Run `pip install -r requirements.txt` to install missing dependencies
 - Enter your username & password in a .env file to connect to a local mySQL server.
 
 A sample of this .env file is available in the .envexample file

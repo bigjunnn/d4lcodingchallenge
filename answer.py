@@ -192,7 +192,7 @@ def createEntries(data):
                          appt_start_dt, appt_end_dt)
 
 
-# Q1
+# Q2
 def getAppts(doctor_id, dateString):
 
     cursor = conn.cursor()
@@ -216,7 +216,7 @@ def getAppts(doctor_id, dateString):
         print("No appointments found.")
 
 
-# Q2
+# Q3
 def fixAppt(appt_id, patient_id, doctor_id, dateTimeString):
 
     start = datetime.strptime(dateTimeString, '%d%m%Y %H:%M:%S')
@@ -224,7 +224,7 @@ def fixAppt(appt_id, patient_id, doctor_id, dateTimeString):
     insertApptRecord(appt_id, patient_id, doctor_id, start, end)
 
 
-# Q3
+# Q4
 def cancelAppt(patient_id, doctor_id, dateTimeString):
 
     cursor = conn.cursor()
